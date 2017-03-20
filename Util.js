@@ -107,7 +107,7 @@ var Util = {
             }else if(Lib=="Maths"){console.warn("This is an Experimental version of Maths Package");
                 Util.Filing.Include("https://cdn.rawgit.com/maximkha/Util_Lib/master/Includes/Maths/Utils.Maths.js");
             }else{
-                console.error("No library exists with that name:" + Lib);
+                console.error("No library exists with the name:" + Lib);
             }
         },
         Start: function(UseIncNum,Callback){
