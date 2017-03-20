@@ -103,9 +103,9 @@ var Util = {
         Using: function(_Lib){
             var Lib = _Lib.toLowerCase();
             if(Lib=="drawing"){
-                Util.Filing.Include("https://cdn.rawgit.com/maximkha/Util_Lib/9ec079d0/Includes/Drawing/Utils.Drawing.js");
+                Util.Filing.Include("https://gitcdn.xyz/repo/maximkha/Util_Lib/master/Includes/Drawing/Utils.Drawing.js");
             }else if(Lib=="maths"){console.warn("This is an Experimental version of Maths Package");
-                Util.Filing.Include("https://cdn.rawgit.com/maximkha/Util_Lib/9ec079d0/Includes/Maths/Utils.Maths.js");
+                Util.Filing.Include("https://gitcdn.xyz/repo/maximkha/Util_Lib/master/Includes/Maths/Utils.Maths.js");
             }else{
                 console.error("No library exists with the name:" + Lib);
             }
