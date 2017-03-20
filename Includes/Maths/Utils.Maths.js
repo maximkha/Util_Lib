@@ -6,9 +6,9 @@ Util.Maths = {
       this.W = x;
       this.H = y;
 
-      for(var x = 0; _x < x; x++){
+      for(var _x = 0; _x < x; _x++){
           this.Arr2d[_x] = [];
-          for(var y = 0; _y < y; y++){
+          for(var _y = 0; _y < y; _y++){
           this.Arr2d[_x][_y] = 0;
         }
       }
