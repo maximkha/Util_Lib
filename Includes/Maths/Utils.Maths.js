@@ -37,9 +37,9 @@ Util.Maths = {
     Sub:function(M1,M2){},
     //Add others
 
-    MatError: function(i,m,tm){this.Error=i; this.Method = m; this.Matrix = tm;},
-  };
-
+    MatError: function(i,m,tm){this.Error=i; this.Method = m; this.Matrix = tm;}
+  },
 };
+
 console.info("Done Including");
 Util.CI = Util.CI+1;
