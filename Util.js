@@ -101,10 +101,11 @@ var Util = {
                 return xhr;
             }
         },
-        Using: function(Lib){
-            if(Lib=="Drawing"){
+        Using: function(_Lib){
+            var Lib = _Lib.toLowerCase();
+            if(Lib=="drawing"){
                 Util.Filing.Include("https://cdn.rawgit.com/maximkha/Util_Lib/master/Includes/Drawing/Utils.Drawing.js");
-            }else if(Lib=="Maths"){console.warn("This is an Experimental version of Maths Package");
+            }else if(Lib=="maths"){console.warn("This is an Experimental version of Maths Package");
                 Util.Filing.Include("https://cdn.rawgit.com/maximkha/Util_Lib/master/Includes/Maths/Utils.Maths.js");
             }else{
                 console.error("No library exists with the name:" + Lib);
