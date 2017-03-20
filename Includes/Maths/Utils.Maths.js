@@ -1,9 +1,17 @@
 console.info("Including Package:Maths");
 Util.Maths = {
   Mat:{
+
     Matrix: function(x,y){
       this.W = x;
       this.H = y;
+
+      for(var x = 0; _x < x; x++){
+          this.Arr2d[_x] = [];
+          for(var y = 0; _y < y; y++){
+          this.Arr2d[_x][_y] = 0;
+        }
+      }
 
       this.Put = function(x,y,V){
         if(this.W>x || this.H>y) return new Util.Maths.Mat.MatError(-1,"Put",this);
