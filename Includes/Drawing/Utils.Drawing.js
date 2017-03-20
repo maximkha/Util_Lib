@@ -1,7 +1,7 @@
 //Author: Maxim Khanov
 //License: GNU General Public License
 //Version:5.0 EXP
-console.info("Fast Includer Started Parsing");
+console.info("Including Package:Drawing");
 Util.Drawing = {
         InitDraw2d: function(Element)
         {
@@ -136,6 +136,6 @@ Util.Drawing = {
 
             },
         },
-    }
-    console.info("Done Including: Draw3D,Draw2D");
+    };
+    console.info("Done Including");
     Util.CI = Util.CI+1;

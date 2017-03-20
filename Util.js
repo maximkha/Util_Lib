@@ -104,6 +104,8 @@ var Util = {
         Using: function(Lib){
             if(Lib=="Drawing"){
                 Util.Filing.Include("https://cdn.rawgit.com/maximkha/Util_Lib/master/Includes/Drawing/Utils.Drawing.js");
+            }else if(Lib=="Maths"){console.warn("This is an Experimental version of Maths Package");
+                Util.Filing.Include("https://cdn.rawgit.com/maximkha/Util_Lib/master/Includes/Maths/Utils.Maths.js");
             }else{
                 console.error("No library exists with that name:" + Lib);
             }
