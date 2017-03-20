@@ -1,6 +1,5 @@
 //Author: Maxim Khanov
-//Version:5.0 EXP
-//console.warn("This is an Experimental version of Utils.js");
+//Version:5.0
 var Util = {
         Tasks: {
             AsyncTaskPool: new Array(),
