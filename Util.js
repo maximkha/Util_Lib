@@ -1,6 +1,11 @@
 //Author: Maxim Khanov
 //Version:5.0
 var Util = {
+        Settings:{
+          Local:false,
+          Files:new Array(2);
+        },
+
         Tasks: {
             AsyncTaskPool: new Array(),
             AsyncReapeatTask: function(Func){
@@ -103,9 +108,11 @@ var Util = {
         Using: function(_Lib){
             var Lib = _Lib.toLowerCase();
             if(Lib=="drawing"){
-                Util.Filing.Include("https://gitcdn.xyz/repo/maximkha/Util_Lib/master/Includes/Drawing/Utils.Drawing.js");
+                if(!Util.Settings.Local)Util.Filing.Include("https://gitcdn.xyz/repo/maximkha/Util_Lib/master/Includes/Drawing/Utils.Drawing.js");
+                if(Util.Settings.Local)Util.Filing.Include(Util.Settings.Files[0]);
             }else if(Lib=="maths"){console.warn("This is an Experimental version of Maths Package");
-                Util.Filing.Include("https://gitcdn.xyz/repo/maximkha/Util_Lib/master/Includes/Maths/Utils.Maths.js");
+                if(!Util.Settings.Local)Util.Filing.Include("https://gitcdn.xyz/repo/maximkha/Util_Lib/master/Includes/Maths/Utils.Maths.js");
+                if(Util.Settings.Local)Util.Filing.Include(Util.Settings.Files[1]);
             }else{
                 console.error("No library exists with the name:" + Lib);
             }
